@@ -71,10 +71,10 @@ const AgGridTable = ({
         const initial = p.data.firstName?.[0]?.toUpperCase() || "U";
         return (
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <Avatar size={32} style={{ background: `hsl(${(initial.charCodeAt(0) * 37) % 360}, 60%, 50%)`, color: '#fff', flexShrink: 0 }}>
+            <Avatar size={32} style={{ background: "var(--primary)", color: "#fff", flexShrink: 0 }}>
               {initial}
             </Avatar>
-            <span style={{ fontWeight: 600, color: "var(--text-primary)", fontSize: 13 }}>{p.value}</span>
+            <span style={{ fontWeight: 600, color: "var(--primary)", fontSize: 13 }}>{p.value}</span>
           </div>
         );
       },
@@ -100,7 +100,7 @@ const AgGridTable = ({
         const items = [];
         if (onEdit) items.push({ key: "edit", label: "Edit", icon: <EditOutlined />, onClick: () => onEdit(p.data) });
         if (onDelete) items.push({ key: "delete", label: <span style={{ color: "#ef4444" }}>Delete</span>, icon: <DeleteOutlined style={{ color: "#ef4444" }} />, onClick: () => onDelete(p.data) });
-        
+
         if (items.length === 0) return null;
 
         return (

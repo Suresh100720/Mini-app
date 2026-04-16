@@ -12,6 +12,7 @@ export const CandidateProvider = ({ children }) => {
   const fetchCandidates = useCallback(async (params = {}) => {
     setLoading(true);
     setError(null);
+    console.log("Fetching candidates with params:", params);
     try {
       const res = await candidateService.getAll(params);
       setCandidates(res.data);

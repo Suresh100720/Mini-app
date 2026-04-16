@@ -28,7 +28,6 @@ const AppRoutes = () => {
           <Route path="settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
         </Route>
 
-        <Route path="*" element={<NotFoundPage />} />
       </Route>
 
       <Route path="*" element={<NotFoundPage />} />

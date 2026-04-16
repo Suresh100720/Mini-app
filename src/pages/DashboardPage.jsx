@@ -217,6 +217,8 @@ const DashboardPage = () => {
           <AgGridTable
             gridId="modalGrid"
             rowData={modalFilteredCandidates}
+            onEdit={(data) => { setEditingCandidate(data); setFormOpen(true); }}
+            onDelete={(data) => setDeleteTarget(data)}
             onGridReady={(p) => { modalGridRef.current = p; }}
             paginationPageSize={10}
             enableCheckboxes={false}
