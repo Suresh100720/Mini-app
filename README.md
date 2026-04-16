@@ -1,6 +1,6 @@
 # 📋 TalentFlow – Candidate & Job Management Platform
 
-A full-stack **HR Management Dashboard** built using the MERN stack. This application enables recruiters to manage candidates, job postings, analytics, and recruitment workflows efficiently with a modern UI and real-time data updates.
+A full-stack HR Management Dashboard built using MongoDB, Node.js, and Express for the backend, and React for the frontend. This application enables recruiters to manage candidates, job postings, analytics, and recruitment workflows efficiently with a modern UI and real-time data updates.
 
 ---
 
